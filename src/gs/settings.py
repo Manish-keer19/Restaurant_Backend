@@ -25,8 +25,11 @@ SECRET_KEY = 'django-insecure-h$j6o5f9sranw7hi_80u+_n7wdno8w#q*0&s55hv3c2^5nqv1h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["https://restaurant-project-nine-opal.vercel.app/", "http://localhost:5173/"]
+# ALLOWED_HOSTS = ["https://restaurant-project-nine-opal.vercel.app/", "http://localhost:5173/"]
+ALLOWED_HOSTS = ["*"]
+
 APPEND_SLASH = False
+
 
 
 
@@ -66,6 +69,7 @@ MIDDLEWARE = [
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # Adjust this for your frontend domain
     # "http://127.0.0.1:5173",
+    "https://restaurant-project-nine-opal.vercel.app"
 ]
 
 ROOT_URLCONF = 'gs.urls'
